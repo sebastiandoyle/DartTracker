@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F544BE8FDB1427E3B63CD5E /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8180B5F821A20720E329B1 /* PlayView.swift */; };
+		375CDB6A6D0615FC2808F832 /* CheckoutLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077D92D84475CF0B1BB6ADB /* CheckoutLookupView.swift */; };
+		3B11FA39F7F694BED7875F9D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639122CB4C4E828D605B7C49 /* PersistenceService.swift */; };
+		4389D82611DCB1F5FC728328 /* CheckoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAEF15517EBCD2CF39F058B /* CheckoutService.swift */; };
+		668BAFE341B34F3526D98D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10775343BCBD8F3F1560EA4 /* Assets.xcassets */; };
+		70CCF80E5A6896F8DA627FEB /* VariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721E0B5BF9707B7A2507C76D /* VariationsView.swift */; };
+		8DAFFD7DC8564EAC528148F4 /* DartboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E62FBFD1555CA6755998D /* DartboardView.swift */; };
+		8E94AB5636BDCD4202C5AB55 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4179F0B6B05C094C0E5282 /* GameModels.swift */; };
+		9B2152B4A0721C2DDF852239 /* DartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A15B68CDB7DB8366811DD23 /* DartTrackerApp.swift */; };
+		C512E3209F20A4BCF03487A0 /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B29A4FA7814791FD1EF6C5 /* GameStore.swift */; };
+		E12BF3EC6F2D9B3B36EF8D76 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248C77E64ECE3122A43AAF5 /* HistoryView.swift */; };
+		F8C9CE07103361CC0AEB28B3 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4036065C2F93F1BAB825869 /* RootTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		105A7FB829ECA03025A5031D /* DartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A15B68CDB7DB8366811DD23 /* DartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartTrackerApp.swift; sourceTree = "<group>"; };
+		2B4179F0B6B05C094C0E5282 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		55B29A4FA7814791FD1EF6C5 /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		639122CB4C4E828D605B7C49 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		721E0B5BF9707B7A2507C76D /* VariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsView.swift; sourceTree = "<group>"; };
+		7248C77E64ECE3122A43AAF5 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		7AAEF15517EBCD2CF39F058B /* CheckoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutService.swift; sourceTree = "<group>"; };
+		8E8180B5F821A20720E329B1 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		9E7E62FBFD1555CA6755998D /* DartboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartboardView.swift; sourceTree = "<group>"; };
+		AA82AFF6104BEC3EDE24E169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B077D92D84475CF0B1BB6ADB /* CheckoutLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLookupView.swift; sourceTree = "<group>"; };
+		C10775343BCBD8F3F1560EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4036065C2F93F1BAB825869 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BADEF0CD566A50C3A6C8EDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AAEF15517EBCD2CF39F058B /* CheckoutService.swift */,
+				55B29A4FA7814791FD1EF6C5 /* GameStore.swift */,
+				639122CB4C4E828D605B7C49 /* PersistenceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		249D1F9B7098D10B18FB9CB5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A15B68CDB7DB8366811DD23 /* DartTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3E80BE91D08D28F8727DA7CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4036065C2F93F1BAB825869 /* RootTabView.swift */,
+				64CBE6BD531B6A62236865FB /* Checkouts */,
+				70A12B070874BA9C3E820522 /* History */,
+				A5891709DDC83BCEC34E0AF8 /* Play */,
+				E16182CAEF63926D78049295 /* Variations */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FE18631A311A5AAED9A831C /* DartTracker */ = {
+			isa = PBXGroup;
+			children = (
+				AA82AFF6104BEC3EDE24E169 /* Info.plist */,
+				249D1F9B7098D10B18FB9CB5 /* App */,
+				64BC96D5CF934C8CF6B2051D /* Models */,
+				9F8FB9B9689550F93F815C7C /* Resources */,
+				0BADEF0CD566A50C3A6C8EDE /* Services */,
+				3E80BE91D08D28F8727DA7CA /* Views */,
+			);
+			path = DartTracker;
+			sourceTree = "<group>";
+		};
+		64BC96D5CF934C8CF6B2051D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B4179F0B6B05C094C0E5282 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64CBE6BD531B6A62236865FB /* Checkouts */ = {
+			isa = PBXGroup;
+			children = (
+				B077D92D84475CF0B1BB6ADB /* CheckoutLookupView.swift */,
+			);
+			path = Checkouts;
+			sourceTree = "<group>";
+		};
+		6C0D2CF6B68FDB6A0F8ABFF6 = {
+			isa = PBXGroup;
+			children = (
+				3FE18631A311A5AAED9A831C /* DartTracker */,
+				DACA467E9E485816A6EE7638 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70A12B070874BA9C3E820522 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7248C77E64ECE3122A43AAF5 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		9F8FB9B9689550F93F815C7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C10775343BCBD8F3F1560EA4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5891709DDC83BCEC34E0AF8 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				9E7E62FBFD1555CA6755998D /* DartboardView.swift */,
+				8E8180B5F821A20720E329B1 /* PlayView.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		DACA467E9E485816A6EE7638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				105A7FB829ECA03025A5031D /* DartTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E16182CAEF63926D78049295 /* Variations */ = {
+			isa = PBXGroup;
+			children = (
+				721E0B5BF9707B7A2507C76D /* VariationsView.swift */,
+			);
+			path = Variations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7ED1404824A47F89AC02FC9 /* DartTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4511AB13ED258AD922E64C30 /* Build configuration list for PBXNativeTarget "DartTracker" */;
+			buildPhases = (
+				B59D2AFD85F651D427F84024 /* Sources */,
+				F5328BB919C3538230132716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DartTracker;
+			packageProductDependencies = (
+			);
+			productName = DartTracker;
+			productReference = 105A7FB829ECA03025A5031D /* DartTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B55B2749B1CFF83427A5FA76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 46F2BDC69399499A7D21951B /* Build configuration list for PBXProject "DartTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6C0D2CF6B68FDB6A0F8ABFF6;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7ED1404824A47F89AC02FC9 /* DartTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5328BB919C3538230132716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668BAFE341B34F3526D98D26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B59D2AFD85F651D427F84024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375CDB6A6D0615FC2808F832 /* CheckoutLookupView.swift in Sources */,
+				4389D82611DCB1F5FC728328 /* CheckoutService.swift in Sources */,
+				9B2152B4A0721C2DDF852239 /* DartTrackerApp.swift in Sources */,
+				8DAFFD7DC8564EAC528148F4 /* DartboardView.swift in Sources */,
+				8E94AB5636BDCD4202C5AB55 /* GameModels.swift in Sources */,
+				C512E3209F20A4BCF03487A0 /* GameStore.swift in Sources */,
+				E12BF3EC6F2D9B3B36EF8D76 /* HistoryView.swift in Sources */,
+				3B11FA39F7F694BED7875F9D /* PersistenceService.swift in Sources */,
+				0F544BE8FDB1427E3B63CD5E /* PlayView.swift in Sources */,
+				F8C9CE07103361CC0AEB28B3 /* RootTabView.swift in Sources */,
+				70CCF80E5A6896F8DA627FEB /* VariationsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		734B1AB428ED5FC91511A3CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7277AB8379;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DartTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DartTracker;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80304857C690520CD43BF0E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C4F6923A4B4AA804E8A93BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D556623777C8E580EB2CCF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7277AB8379;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DartTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DartTracker;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4511AB13ED258AD922E64C30 /* Build configuration list for PBXNativeTarget "DartTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734B1AB428ED5FC91511A3CB /* Debug */,
+				D556623777C8E580EB2CCF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		46F2BDC69399499A7D21951B /* Build configuration list for PBXProject "DartTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F6923A4B4AA804E8A93BBB /* Debug */,
+				80304857C690520CD43BF0E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B55B2749B1CFF83427A5FA76 /* Project object */;
+}
