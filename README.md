@@ -1,61 +1,37 @@
-## DartTracker (iOS)
+# DartTracker
 
-Modern, clean SwiftUI app to track darts games, calculate best checkouts, and learn popular game variations.
+A darts scoring app that does the maths so you can focus on throwing. X01 game tracking, smart checkout suggestions, and a variations guide — built with SwiftUI for iOS.
 
-### Features
-- Track X01 games (301/501/701), supports 1–4 players
-- Smart checkout suggestions (finishes on doubles and bull)
-- Clean, glanceable scoreboard and per-turn history
-- Variations guide with visual explanations
-- Local persistence of recent games and basic stats
+## Features
 
-### Requirements
-- Xcode 15 or newer
-- iOS 16.0+
-- XcodeGen (optional) to generate the Xcode project
+- **X01 game modes** — 301, 501, 701 with 1-4 player support
+- **Smart checkout calculator** — suggests optimal double-out paths from any score
+- **Per-turn history** with running averages and statistics
+- **Variations guide** — Cricket, Around the Clock, Killer with visual rule explanations
+- **Game persistence** — resume interrupted games
+- **Clean scoreboard UI** — designed for glanceable mid-game use
 
-### Setup
-1. Install XcodeGen if not installed:
+## Tech Stack
+
+- SwiftUI
+- SwiftData (game persistence)
+- XcodeGen for project generation
+
+## Getting Started
+
 ```bash
-brew install xcodegen
-```
-2. Generate the Xcode project:
-```bash
+git clone https://github.com/sebastiandoyle/DartTracker.git
 cd "Dart Tracker"
 xcodegen generate
-```
-3. Open the project:
-```bash
 open DartTracker.xcodeproj
 ```
-4. Select an iOS Simulator and Build & Run (Cmd+R)
 
-### App Store Submission checklist
-1) Update identifiers and team
-- Set `PRODUCT_BUNDLE_IDENTIFIER` and `DEVELOPMENT_TEAM` in `project.yml`
-- Set `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION`
+Requires Xcode 15+ and iOS 16+.
 
-2) App Icons
-- Place a 1024x1024 PNG at `art/icon-1024.png`
-- Run:
-```bash
-bash scripts/generate_icons.sh
-```
-- Verify `Assets.xcassets/AppIcon.appiconset` contains all required sizes
+## Checkout Logic
 
-3) Info.plist
-- `ITSAppUsesNonExemptEncryption` is set to `NO` (false) by default
+The checkout calculator works backwards from your remaining score, finding all valid 3-dart combinations that end on a double. It prioritizes commonly used finishes (e.g., T20-T20-D20 for 180, T19-T16-D16 for 121) and displays them in order of conventional preference.
 
-4) Archive
-- Open the Xcode project and choose Any iOS Device (arm64)
-- Product → Archive, then Distribute to App Store Connect
+## License
 
-5) Store listing
-- Prepare screenshots (iPhone + iPad), privacy policy URL, description, keywords, support URL
-- GitHub Pages (recommended): push this repo to GitHub and enable Pages with source: `docs/` directory
-  - Privacy Policy URL: `https://<your-github-username>.github.io/<repo-name>/privacy-policy.html`
-  - Support URL: `https://<your-github-username>.github.io/<repo-name>/support.html`
-
-
-
-
+MIT
